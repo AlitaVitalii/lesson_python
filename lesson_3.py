@@ -33,5 +33,5 @@
 # print(x for x in range (100))
 
 
-number = 11
-print(number if number <= number)
+# number = 11
+# print(number if number <= number)
