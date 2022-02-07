@@ -55,5 +55,27 @@
 #     print("Alarm")
 
 
-def generator():
-    for num in range(10):
+# def generator():
+#     for num in range(10):
+
+
+# print(list(range(0)))
+# print(list(range(2, 1, 3)))
+#
+# print(list(range(0, 3, 2)))
+# print(list(range(0, 4, 2)))
+
+
+# for n, i in enumerate(range(0, 7, 2), 1):
+#     print(f'{n}) =-> {i}')
+# print()
+#
+# for n, i in enumerate(range(-7, 0, 2), 1):
+#     print(f'{n}) =-> {abs(i)}')
+
+
+mylist = ['apple', 'banana', 'cherry', 'pear', 'plum']
+# for i in range(len(mylist)):
+#     print(mylist[i])
+
+print(len(mylist))
