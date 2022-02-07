@@ -12,12 +12,12 @@
 #         print(f"показатель степени: {n}")
 
 num = abs(int(input("введите число: ")))
-step = 1
-n = 0
+a = 1
+step = 0
 
-while step <= num:
-    p_step = step
-    n += 1
-    step = step * 2
+while a <= num:
+    p_step = a
+    step += 1
+    a = a * 2
 else:
-    print(f"Показатель степени: {p_step} \nСтепень: {n-1}")
+    print(f"Показатель степени: {p_step} \nСтепень: {step-1}")
