@@ -7,4 +7,4 @@ while n <= num:
     step += 1
     n = n * 2
 else:
-    print(f"Показатель степени: {p_step} \nСтепень: {step-1}")
+    print(f"Степень: {p_step} \nПоказатель степени: {step-1}")
