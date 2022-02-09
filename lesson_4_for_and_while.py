@@ -79,3 +79,16 @@ mylist = ['apple', 'banana', 'cherry', 'pear', 'plum']
 #     print(mylist[i])
 
 print(len(mylist))
+
+# mylist = []
+# for n in range(30):
+#     x = 2**n
+#     mylist.append(x)
+#
+# num = abs(int(input("введите число: ")))
+#
+# for n in mylist:
+#     if num // n == 1:
+#         print(f"Для числа: {num}")
+#         print(f"степень: {mylist.index(n)}")
+#         print(f"показатель степени: {n}")
