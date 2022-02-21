@@ -172,5 +172,5 @@
 # print(b)
 #
 # # ================== Sorted
-tuple_keys = ('hostname', 'location', 'vendor', 'model', 'ios', 'ip')
-print(sorted(tuple_keys), type(sorted(tuple_keys)))
+# tuple_keys = ('hostname', 'location', 'vendor', 'model', 'ios', 'ip')
+# print(sorted(tuple_keys), type(sorted(tuple_keys)))

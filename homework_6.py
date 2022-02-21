@@ -5,3 +5,4 @@ for i in range(k+1, len(mylist)):
     mylist[b] = mylist[i]
 mylist.pop()
 print(mylist)
+
