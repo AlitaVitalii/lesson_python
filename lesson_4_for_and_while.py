@@ -75,8 +75,8 @@
 
 
 mylist = ['apple', 'banana', 'cherry', 'pear', 'plum']
-# for i in range(len(mylist)):
-#     print(mylist[i])
+for i in range(len(mylist)):
+    print(mylist[i])
 
 print(len(mylist))
 
