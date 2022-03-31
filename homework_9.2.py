@@ -1,4 +1,3 @@
-
 book = [[34587, 'Learning Python, Mark Lutz', 4, 40.95],
         [98762, 'Programming Python, Mark Lutz', 5, 56.80],
         [77226, 'Head First Python, Paul Barry', 3, 32.95],
@@ -16,10 +15,9 @@ book = [[34587, 'Learning Python, Mark Lutz', 4, 40.95],
 #     book_tuple.append((n, s))
 #
 # print(book_tuple)
+
 book_1 = list(map(lambda x: (x[3] + 10) * x[2] if x[2]*x[3] < 100 else x[2]*x[3], book))
-# book_1 = list(map(lambda x: x[2] * x[3], book))
 book_2 = list(map(lambda x: round(x, 2), book_1))
 book_3 = list(map(lambda x, y: (x[0], y), book, book_2))
-print(book_1)
-print(book_2)
+
 print(book_3)

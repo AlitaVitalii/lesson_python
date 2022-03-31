@@ -35,12 +35,12 @@
 #
 # print('{0}{1}{0}'.format('abra', 'cad'))
 
-x = " ".join(["spam", "eggs", "ham"])
-print(x)
-y = x.split(' ')
-print(y)
-print(x.upper())
-print(x.title())
+# x = " ".join(["spam", "eggs", "ham"])
+# print(x)
+# y = x.split()
+# print(y)
+# print(x.upper())
+# print(x.title())
 
 
 # msg = input()
@@ -70,4 +70,21 @@ print(x.title())
 # #
 # print (ser(text, word))
 
+# f = lambda x, y: x * y
+# print(f(2, 5))
 
+# def even_fn(x):
+#     if x % 2 == 0:
+#         return True
+#     return False
+# print(list(filter(even_fn, ([1,3,5,10,2,9,55,8]))))
+
+# print(list(filter(lambda x: x % 2 == 0, [1,2,4,5,74,5,8,4,25,4])))
+
+l = [1,2,3,4]
+print(list(map(lambda x: x**2, l)))
+
+test = lambda a : True if (a > 10 and a < 20) else False
+print(test(13))
+print(test(1))
+print(test(34))
