@@ -21,3 +21,11 @@ book_2 = list(map(lambda x: round(x, 2), book_1))
 book_3 = list(map(lambda x, y: (x[0], y), book, book_2))
 
 print(book_3)
+
+# еще один вариант
+book_tuple = []
+
+list(map(lambda x: book_tuple.append((x[0], round((x[3] + 10) * x[2], 2))) if x[2] * x[3] < 100
+else book_tuple.append((x[0], round(x[2] * x[3], 2))), book ))
+
+print(book_tuple)
