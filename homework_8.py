@@ -14,6 +14,6 @@ def season(num):
     if 9 <= num <= 11:
         print("Autumn")
 
-    return month_list[num]
+    return print(month_list[num])
 
-print(season(month))
+season(month)
