@@ -1,0 +1,15 @@
+my_list = ['USA', 'Ukrainian', 'Poland', 'Germany']
+
+print(my_list)
+print(sorted(my_list))
+print(sorted(my_list, reverse=True))
+print(my_list)
+my_list.reverse()
+print(my_list)
+my_list.reverse()
+print(my_list)
+print()
+my_list.sort()
+print(my_list)
+my_list.sort(reverse=True)
+print(my_list)
