@@ -5,3 +5,10 @@ for car in cars:
         print(car.upper())
     else:
         print(car.title())
+
+print()
+for i in cars:
+    if i != 'bmw':
+        print(i.title())
+    else:
+        print(i.upper())
