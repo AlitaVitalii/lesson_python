@@ -20,7 +20,7 @@ def make_album(name_artist, album, number_trake='0'):
     return my_dict
 
 
-aria = make_album('aria', 'shtill', "12")
+aria = make_album('aria', 'shtill', 12)
 agata = make_album('agata', 'opium')
 
 print(aria, agata)
