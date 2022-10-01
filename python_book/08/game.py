@@ -3,14 +3,14 @@
 print('отгадай число')
 x = int
 
-number = 45
+number = 621
 
 while number != x:
     x = int(input('Введите число:'))
     if x < number:
-        print('Число меньше')
+        print('\tЧисло меньше')
     if x > number:
-        print('число больше')
+        print('\tчисло больше')
 
 
 print(f'\nВы отгадали число - {number}')
