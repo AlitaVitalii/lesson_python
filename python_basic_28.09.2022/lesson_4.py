@@ -22,7 +22,7 @@ print("_____".join(["hey", "ho", "lalaley"]))
 separator = "+++"
 print(separator.join(words))
 
-#isdigit / isalpha / isalnum / isascii / islower / isupper / isspace
+#   isdigit / isalpha / isalnum / isascii / islower / isupper / isspace
 
 text = "___привіт світ_____"
 
@@ -30,11 +30,11 @@ print('>' + text.strip('_') + '<')
 
 
 text = "          привіт світ    "
-print(text.strip().replace('т', 'д').upper())
+print(text.strip().replace('іт', 'ед').upper())
 
 
 
-lower / upper / title / capitalize
+"""lower / upper / title / capitalize
 
 isdigit / isalpha / isalnum / isascii / islower / isupper / isspace
 
