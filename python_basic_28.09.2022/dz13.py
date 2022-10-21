@@ -37,11 +37,7 @@ for cod_word in list_01:
     symbol_list = cod_word.split()
     word = ''
     for s in symbol_list:
-        if s in morse_dict_revers.keys():
-            word += morse_dict_revers[s]
-        else:
-            word += '~'
-
+        word += morse_dict_revers.get(s, '~')
     list_word.append(word)
 
 print(' '.join(list_word))
