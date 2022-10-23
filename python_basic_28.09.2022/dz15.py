@@ -20,17 +20,3 @@ while num_1 <= num_2:
     num_1 += 1
 
 print('Знайдено простих чисел: ', counter_prime)
-
-#
-# while num_1 <= num_2:
-#     delitel = 2
-#     is_prime = True
-#     while delitel < num_1:
-#         if num_1 % delitel == 0:
-#             is_prime = False
-#             break
-#         delitel += 1
-#     if is_prime:
-#         counter_prime += 1
-#         print(num_1)
-#     num_1 += 1
