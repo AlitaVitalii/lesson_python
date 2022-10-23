@@ -1,7 +1,5 @@
 num_1 = int(input("Введіть нижню межу діапазону для пошуку простих чисел: "))
 num_2 = int(input('Введіть верхню межу діапазону для пошуку простих чисел: '))
-counter_prime = 0
-print('Прості числа:')
 
 
 def is_prime(num):
@@ -13,6 +11,8 @@ def is_prime(num):
     return True
 
 
+print('Прості числа:')
+counter_prime = 0
 while num_1 <= num_2:
     if is_prime(num_1):
         print(num_1)
