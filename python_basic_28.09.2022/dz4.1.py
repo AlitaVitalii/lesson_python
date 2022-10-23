@@ -6,7 +6,7 @@ print('Прості числа:')
 while num_1 <= num_2:
     delitel = 2
     is_prime = True
-    while delitel < num_1 or num_1 == 2:
+    while delitel < num_1:
         if num_1 % delitel == 0:
             is_prime = False
             break
