@@ -43,9 +43,9 @@
 # print(x.title())
 
 
-# msg = input()
-# print(msg)
-# print(msg.replace("#", " "))
+msg = input()
+print(msg)
+print(msg.replace("#", " "))
 
 # def welcome(user):
 #     print("Welcome " + user)
@@ -81,10 +81,10 @@
 
 # print(list(filter(lambda x: x % 2 == 0, [1,2,4,5,74,5,8,4,25,4])))
 
-l = [1,2,3,4]
-print(list(map(lambda x: x**2, l)))
-
-test = lambda a : True if (a > 10 and a < 20) else False
-print(test(13))
-print(test(1))
-print(test(34))
+# l = [1,2,3,4]
+# print(list(map(lambda x: x**2, l)))
+#
+# test = lambda a : True if (a > 10 and a < 20) else False
+# print(test(13))
+# print(test(1))
+# print(test(34))
