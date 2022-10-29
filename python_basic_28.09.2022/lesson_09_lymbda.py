@@ -80,3 +80,61 @@ print(e)
 
 print('______________--------5')
 
+import random as r
+
+r.seed(0)  # не случайная случайность
+
+for i in range(10):
+    print(int(r.random() * 2000 - 1000))
+
+from random import seed as my_seed, random as my_random
+
+my_seed(0)
+
+for i in range(10):
+    print(int(my_random() * 2000 - 1000))
+
+print('------------------6')
+
+from random import seed, random, randrange
+
+my_list = list(range(1, 20, 2))
+print(my_list)
+
+for i in range(10):
+    print(randrange(1, 20, 2))
+
+print('-------------------7')
+
+from random import randint
+
+for i in range(10):
+    print(randint(20, 30))
+
+print('--------------------8')
+
+from random import choice
+
+color = ['green', 'yellow', 'red']
+
+for i in range(10):
+    print(choice(color))
+
+from random import shuffle
+
+color = ['green', 'yellow', 'red', 'orange', 'violet', 'brown']
+
+for i in range(10):
+    shuffle(color)
+    print(color)
+
+print('-------------------10')
+
+from random import sample
+
+color = ['green', 'yellow', 'red', 'orange', 'violet', 'brown']
+
+for i in range(10):
+    print(sample(color, 3))
+
+print(color)

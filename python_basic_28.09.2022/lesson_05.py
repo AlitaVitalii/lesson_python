@@ -21,6 +21,7 @@ template = (
     f"It's population is {population} millions of people."
 )
 
+print('111111111111111')
 print(template)
 print()
 

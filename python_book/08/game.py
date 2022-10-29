@@ -1,9 +1,12 @@
+from random import randint
 
+number = randint(1, 100)
+print(number)
 
 print('отгадай число')
 x = int
 
-number = 621
+# number = 621
 
 while number != x:
     x = int(input('Введите число:'))
