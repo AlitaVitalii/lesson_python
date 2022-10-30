@@ -1,5 +1,13 @@
 
 def print_matrix(matrix, row_headers=None, col_headers=None, delimiter=' '):
+    """
+
+    :param matrix:
+    :param row_headers: авс
+    :param col_headers: 123
+    :param delimiter: дільник
+    :return:
+    """
     if col_headers:
         if row_headers:
             print(' ', end=delimiter)
@@ -55,7 +63,6 @@ next_turn = CROSS
 while True:
     print("Ігрове поле: ")
     print_matrix(board, row_headers=ROW_HEADERS, col_headers=COL_HEADERS)
-
 
     coord = input(f"{sides[next_turn]}, ваш хід: ")
     row, col = parse_coordinates(

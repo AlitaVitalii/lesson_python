@@ -5,7 +5,7 @@ numb_random = randint(1, 100)
 print('Відгадайте число від 1 до 100')
 
 counter = 0
-numb_input = int
+# numb_input = int
 while numb_random != numb_input:
     numb_input = int(input('\nВведіть число: '))
     counter += 1
