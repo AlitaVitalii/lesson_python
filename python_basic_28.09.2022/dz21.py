@@ -31,7 +31,6 @@ days_in_month = {
 month = int(input("\nВведіть номер місяця (1-12) вашої дати народження: "))
 day = int(input("Введіть число вашої дати народження: "))
 
-
 if days_in_month.get(month) and days_in_month.get(month) >= day:
     for k, v in zodiac.items():
         zodiac[k] = [i for i in v.split('-')]
