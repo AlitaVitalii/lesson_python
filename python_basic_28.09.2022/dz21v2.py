@@ -31,16 +31,9 @@ days_in_month = {
 month = int(input("\nВведіть номер місяця (1-12) вашої дати народження: "))
 day = int(input("Введіть число вашої дати народження: "))
 
-if days_in_month.get(month) and days_in_month.get(month) >= day:
-    for k, v in zodiac.items():
-        zodiac[k] = [[int(i) for i in it.split('.')] + [int(i) for i in it.split('.')] for it in v.split('-')]
-
-    print(zodiac)
-
-    # for k, v in zodiac.items():
-    #     zodiac[k] = [int(i) for i in v[0].split('.')], [int(i) for i in v[1].split('.')]
-
-    for k, v in zodiac.items():
+if days_in_month.get(month) and days_in_month.get(month) >= day > 0:
+    zodiac_2 = {key: [[int(i) for i in v.split('.')] for v in values.split('-')] for key, values in zodiac.items()}
+    for k, v in zodiac_2.items():
         if month == v[0][1]:
             if v[0][0] <= day <= days_in_month[month]:
                 print(k.title())
@@ -49,6 +42,3 @@ if days_in_month.get(month) and days_in_month.get(month) >= day:
                 print(k.title())
 else:
     print('Ви ввели некоректну дату!')
-
-
-
