@@ -1,4 +1,4 @@
-text = input('Введіть дані: ')
+text = input('Введіть послідовність чисел (розділених комами): ')
 list_01 = [int(i) for i in text.split(',')]
 
 counter = 0
