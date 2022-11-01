@@ -11,5 +11,4 @@ for i in range(len(list_01)):
     else:
         counter = 0
 
-print(max_count)
 print('Найбільше парних чисел підряд: ', max(max_count))
