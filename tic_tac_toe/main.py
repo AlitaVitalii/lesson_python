@@ -5,8 +5,8 @@ CROSS = 'x'
 ZERO = 'o'
 EMPTY = '.'
 
-ROW_HEADERS = '123'
-COL_HEADERS = 'abc'
+ROW_HEADERS = '123456789'
+COL_HEADERS = 'abcdefghi'
 
 sides = {
     CROSS: "Хрестики",
@@ -15,7 +15,7 @@ sides = {
 
 next_turn = CROSS
 
-board = create_matrix(3, 3, value='.')
+board = create_matrix(9, 9, value='.')
 
 while True:
     print("Ігрове поле:")
