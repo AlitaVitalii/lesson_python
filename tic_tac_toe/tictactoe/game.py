@@ -43,10 +43,6 @@ def has_full_row(matrix, element):
         if max(max_count) >= 5:
             return True
 
-    # for row in matrix:
-        # if all([cell == element for cell in row]):
-        #     return True
-
     # verticals
     max_count = {0, }
     for col_index in range(size):
@@ -59,8 +55,6 @@ def has_full_row(matrix, element):
                 counter = 0
         if max(max_count) >= 5:
             return True
-        # if all([row[col_index] == element for row in matrix]):
-        #     return True
 
     # +\+ diagonal sides
     max_count = {0, }
@@ -88,10 +82,7 @@ def has_full_row(matrix, element):
         if max(max_count) >= 5:
             return True
 
-    # if all([matrix[r][r] == element for r in range(size)]):
-    #     return True
-
-    # \/ diagonal
+        # \/ diagonal
     max_count = {0, }
     counter = 0
     for r in range(size):
@@ -102,8 +93,6 @@ def has_full_row(matrix, element):
             counter = 0
     if max(max_count) >= 5:
         return True
-    # if all([matrix[r][size - r - 1] == element for r in range(size)]):
-    #     return True
 
     return False
 
