@@ -30,15 +30,22 @@ COLS = 9  # стовбчик
 
 board = create_matrix(ROWS, COLS, '.')
 
+
+
 for r in range(len(board)):
+    print('full_step')
     # board[len(board) - r - 1][r] = "*"
     # board[r][len(board)-r-1] = '+'
     for i in range(r):
+        print('step')
         # board[i][r-i-1] = '+'
-        board[len(board)-i-1][i-r] = '*'
-        # board[i-r][i] = '*'
-        # board[i][i-r] = '+'
-
+        print_matrix(board)
+        # board[len(board)-i-1][i-r] = '*'
+        board[i-r][i] = '*'
+        board[i][i-r] = '+'
+for row in board:
+    for cell in row:
+        print(cell, end='')
 
 
 

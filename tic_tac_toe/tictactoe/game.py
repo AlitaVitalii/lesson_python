@@ -31,16 +31,17 @@ def has_full_row(matrix, element):
     size = len(matrix)
 
     # horizontals
+    max_count = {0, }
     for row in matrix:
         counter = 0
-        max_count = {0, }
         for cell in row:
             if cell == element:
                 counter += 1
                 max_count.add(counter)
             else:
                 counter = 0
-        if max(max_count) == 5:
+        if max(max_count) >= 5:
+            print('-----')
             return True
 
     # for row in matrix:
@@ -48,60 +49,78 @@ def has_full_row(matrix, element):
         #     return True
 
     # verticals
+    max_count = {0, }
     for col_index in range(size):
         counter = 0
-        max_count = {0, }
         for row in matrix:
             if row[col_index] == element:
                 counter += 1
                 max_count.add(counter)
             else:
                 counter = 0
-        if max(max_count) == 5:
+        if max(max_count) >= 5:
+            print('||')
             return True
         # if all([row[col_index] == element for row in matrix]):
         #     return True
 
-    # \\ diagonal
-    counter = 0
+    # +\+ diagonal sides
     max_count = {0, }
     for r in range(size):
+        counter = 0
         for i in range(r):
             if matrix[i][i-r] == element or matrix[i-r][i] == element:
                 counter += 1
                 max_count.add(counter)
             else:
                 counter = 0
-    if max(max_count) == 5:
-        return True
+        if max(max_count) >= 5:
+            print('+\+')
+            return True
 
-        # // diagonal
-    counter = 0
+        # +/+ diagonal sides
     max_count = {0, }
     for r in range(size):
+        counter = 0
         for i in range(r):
             if matrix[i][r - i - 1] == element or matrix[size - i - 1][i - r] == element:
                 counter += 1
                 max_count.add(counter)
             else:
                 counter = 0
-    if max(max_count) == 5:
-        return True
+        if max(max_count) >= 5:
+            print('+/')
+            return True
 
+    #     # /+ diagonal
+    # max_count = {0, }
+    # for r in range(size):
+    #     counter = 0
+    #     for i in range(r):
+    #         if matrix[size - i - 1][i - r] == element:
+    #             counter += 1
+    #             max_count.add(counter)
+    #         else:
+    #             counter = 0
+    #     if max(max_count) >= 5:
+    #         print('/+')
+    #         return True
 
     # if all([matrix[r][r] == element for r in range(size)]):
     #     return True
 
     # \/ diagonal
-    counter = 0
+
     max_count = {0, }
     for r in range(size):
+        counter = 0
         if matrix[r][size-r-1] == element or matrix[r][r] == element:
             counter += 1
             max_count.add(counter)
         else:
             counter = 0
-    if max(max_count) == 5:
+    if max(max_count) >= 5:
+        print('diogonali')
         return True
     # if all([matrix[r][size - r - 1] == element for r in range(size)]):
     #     return True
