@@ -41,7 +41,6 @@ def has_full_row(matrix, element):
             else:
                 counter = 0
         if max(max_count) >= 5:
-            print('-----')
             return True
 
     # for row in matrix:
@@ -59,7 +58,6 @@ def has_full_row(matrix, element):
             else:
                 counter = 0
         if max(max_count) >= 5:
-            print('||')
             return True
         # if all([row[col_index] == element for row in matrix]):
         #     return True
@@ -75,7 +73,6 @@ def has_full_row(matrix, element):
             else:
                 counter = 0
         if max(max_count) >= 5:
-            print('+\+')
             return True
 
         # +/+ diagonal sides
@@ -89,38 +86,21 @@ def has_full_row(matrix, element):
             else:
                 counter = 0
         if max(max_count) >= 5:
-            print('+/')
             return True
-
-    #     # /+ diagonal
-    # max_count = {0, }
-    # for r in range(size):
-    #     counter = 0
-    #     for i in range(r):
-    #         if matrix[size - i - 1][i - r] == element:
-    #             counter += 1
-    #             max_count.add(counter)
-    #         else:
-    #             counter = 0
-    #     if max(max_count) >= 5:
-    #         print('/+')
-    #         return True
 
     # if all([matrix[r][r] == element for r in range(size)]):
     #     return True
 
     # \/ diagonal
-
     max_count = {0, }
+    counter = 0
     for r in range(size):
-        counter = 0
         if matrix[r][size-r-1] == element or matrix[r][r] == element:
             counter += 1
             max_count.add(counter)
         else:
             counter = 0
     if max(max_count) >= 5:
-        print('diogonali')
         return True
     # if all([matrix[r][size - r - 1] == element for r in range(size)]):
     #     return True
