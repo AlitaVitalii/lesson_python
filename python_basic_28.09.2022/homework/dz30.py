@@ -16,6 +16,8 @@ def add_thousands_separator(fn):
     return wrapper
 
 
+
+
 # num = 123456789
 # print(('{0:,}'.format(num)).replace(',', "'"))
 #
@@ -33,6 +35,10 @@ def add_thousands_separator(fn):
 #         count += 1
 #
 # print(new_text_num)
+
+# n = str(1234567)[::-1]
+# print(' '.join(n[i:i+3] for i in range(0, len(n), 3))[::-1])
+
 
 
 @add_thousands_separator

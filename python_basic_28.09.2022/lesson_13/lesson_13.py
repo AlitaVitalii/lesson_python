@@ -77,9 +77,9 @@ print(os.path.exists('foo'))
 
 print('-----------------------------8')
 
-import os
-
-os.remove('output.txt')  # del
+# import os
+#
+# os.remove('output.txt')  # del
 
 print('----------------------------9')
 
@@ -135,10 +135,10 @@ except (IndexError, ZeroDivisionError) as e:
 
 print('----------------------15')
 
-try:
-    raise RuntimeError("Incorrect value")
-except (IndexError, ZeroDivisionError, ValueError) as e:
-    print("Ouch! (or Whoa!?)", e)
+# try:
+#     raise RuntimeError("Incorrect value")
+# except (IndexError, ZeroDivisionError, ValueError) as e:
+#     print("Ouch! (or Whoa!?)", e)
 
 print('----------------------16')
 

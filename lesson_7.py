@@ -156,7 +156,7 @@ Set, Frozenset, Dict
 # ==================== DICTs
 
 # Создадим пустой словать Capitals
-Capitals = dict()
+# Capitals = dict()
 #
 # # Заполним его несколькими значениями
 # Capitals['Hungary'] = 'Budapest'
