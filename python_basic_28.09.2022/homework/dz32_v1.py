@@ -13,8 +13,8 @@ class Stack:
     def push(self, element):
         self.elements.append(element)
 
-    def pop(self):
-        return self.elements.pop(-1)
+    def pop(self, default=None):
+        return default if self.is_empty else self.elements.pop(-1)
 
     def clear(self):
         self.elements.clear()
@@ -61,5 +61,6 @@ print('\nвидалення всіх елементів стеку')
 stack02.clear()
 print('Розмір stack01:', stack01.size)
 print('Розмір stack02:', stack02.size)
-
+print(stack01.pop())
+print(stack02.pop())
 
