@@ -3,6 +3,7 @@ n = 1
 step = 0
 mylist = []
 
+
 while n <= num:
     step += 1
     n = step**2
